@@ -29,7 +29,7 @@ Data preparation done in SQL:
 1. Created view for *order_items*, so it inlucdes:
 - *profit_usd* column (price_usd - cogs_usd)
 - flag column indicating whether order item was raised for refund (*refunded_item*).
-3. Created view for website_sessions containging additional columns:
+2. Created view for website_sessions containging additional columns:
 - flag column indicating whether the session ended with purchase (*purchase_processed*).
 - flag column indicating whether /shipping page was reached (*reached_shipping*).
 - count of pages reached during the session (*no_of_pages_reached*). This count excludes purchase funnel pages, as it's aim will be to compare users engagement before deciding to/not to buy.
@@ -48,4 +48,9 @@ Columns removed due to being redundant (duplicated with *order_items* table):
 - *items_purchased*
 - *price_usd*
 - *cogs_usd*
+
+4. Create view summarizing primary and secondary products on orders with more than one item.
+
+
+
 
