@@ -49,7 +49,28 @@ Columns removed due to being redundant (duplicated with *order_items* table):
 - *price_usd*
 - *cogs_usd*
 
-4. Create view summarizing primary and secondary products on orders with more than one item.
+4. Create view summarizing primary and secondary products on orders with more than one item (*primary_products*).
+5. Additional data transformation which considered was to move prices and cogs from *order_items* to *products* table in order to optimize the dataset. Nevertheless the final decision was taken to keep these figures in *order_items* as main fact table, to make it more realistic. This is the way how it would be kept in open data model where future changes of prices and cogs need to be expected (unlike the subject dataset, in which both prices and cogs remained unchanged throughout the period).
+
+### DATA TRANFORMATION IN POWER QUERY
+
+1. The following tables (or views) were imported to Power Query and furhter to Power BI:
+   - *order_items (view)*
+   - *orders (view)*
+   - *website_sessions (view)*
+   - *order_item_refunds*
+   - *products*
+   - *website_pageviews*
+   - *primary_products*
+  2. Two custom columns added to *website_sessions* in order to make final Power BI visulisation more user friendly. The two columns translate numeric flag columns (0, 1) to text columns (yes, no). Columns created: *purchase_session* (for *purchase_processed*) and *user_type* (for *is_repeat_session*).
+
+### POWER BI ANALYSIS
+The analysis has been divided into 2 parts:
+ - Profit analysis
+ - Website sessions analysis
+
+
+PROFIT ANALYSIS - Key metrics
 
 
 
