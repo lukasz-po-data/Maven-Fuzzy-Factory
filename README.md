@@ -65,6 +65,10 @@ Columns removed due to being redundant (duplicated with *order_items* table):
   2. Two custom columns added to *website_sessions* in order to make final Power BI visulisation more user friendly. The two columns translate numeric flag columns (0, 1) to text columns (yes, no). Columns created: *purchase_session* (for *purchase_processed*) and *user_type* (for *is_repeat_session*).
 
 ### POWER BI ANALYSIS
+The dataset contains details about sales and website traffic. The same is reflected in data model having 2 main fact tables: *order_items* and *website_sessions*.
+
+
+
 The analysis has been divided into 2 parts:
  - Profit analysis
  - Website sessions analysis
