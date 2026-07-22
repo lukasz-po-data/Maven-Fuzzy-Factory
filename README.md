@@ -32,6 +32,8 @@ Dataset consists of 6 tables:
 2. Checked whether prices and cogs changed throughout the analysis period.
 3. Checked whether refunds were always issued at 100% and whether any refunds referenced non-existing orders.
 
+[SQL checks](sql/price_cogs_refunds_checks.sql)
+
 **Data preparation done in SQL:**
 
 1. Created view for *order_items*, so it inlucdes:
@@ -71,7 +73,7 @@ Dataset consists of 6 tables:
 The dataset contains details about sales and website traffic, which is reflected in the data model through 2 main fact tables: `order_items` and `website_sessions`.
 
 <p align="left">
-<img src="img/Data_model.jpg" alt="model" width="800" title="model">
+<img src="img/Data_model.jpg" alt="model" width="600" title="model">
 </p>
 
 Following this logic, the dashboard is divided into 2 parts:
@@ -83,12 +85,12 @@ It was a deliberate decision to analyze the numbers from a profit rather than sa
 An additional Calendar table was added in Power BI using a DAX formula.
 
 <p align="left">
-<img src="img/Profit.jpg" alt="profit" width="800" title="profit">
+<img src="img/Profit.jpg" alt="profit" width="600" title="profit">
 </p>
 
 
 <p align="left">
-<img src="img/Website_sessions.jpg" alt="sessions" width="800" title="sessions">
+<img src="img/Website_sessions.jpg" alt="sessions" width="600" title="sessions">
 </p>
 
 
