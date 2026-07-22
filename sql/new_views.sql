@@ -56,7 +56,7 @@ left join pageviews_aggregated pa using(website_session_id)
 
 
 
-/* create view to lean orders table. It will be needed as mainly a bridge table between order_items and website_sessions. */
+/* create view to streamline orders table. It will be needed as mainly a bridge table between order_items and website_sessions. */
 
 create or replace view vw_orders as
 select
