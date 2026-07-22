@@ -32,7 +32,7 @@ Dataset consists of 6 tables:
 2. Checked whether prices and cogs changed throughout the analysis period.
 3. Checked whether refunds were always issued at 100% and whether any refunds referenced non-existing orders.
 
-[SQL checks](sql/price_cogs_refunds_checks.sql)
+   [SQL checks](sql/price_cogs_refunds_checks.sql)
 
 **Data preparation done in SQL:**
 
@@ -52,7 +52,9 @@ Dataset consists of 6 tables:
    - **Columns removed** (redundant with `order_items`): `created_at`, `primary_product_id`, `items_purchased`, `price_usd`, `cogs_usd`
 
 4. Created a view summarizing primary and secondary products for orders with more than one item (`primary_products`).
-   
+
+   [SQL new views](sql/new_views.sql)
+
 5. An additional transformation considered was moving prices and cogs from `order_items` to the `products` table, to optimize the dataset. However, the final decision was to keep these figures in `order_items` as the main fact table, to make the model more realistic. This mirrors how such data would be structured in a real-world data model, where future price and cogs changes are expected — unlike in this dataset, where both remained unchanged throughout the period.
 
 ### 3. DATA TRANSFORMATION IN POWER QUERY
@@ -93,6 +95,11 @@ An additional Calendar table was added in Power BI using a DAX formula.
 <img src="img/Website_sessions.jpg" alt="sessions" width="600" title="sessions">
 </p>
 
-
+### 5. KEY TAKEWAYS
+1. Recurring sales peaks are observed each year. Sales across all products spike at the end of November, likely tied to Black Friday/Cyber Monday. A separate, product-specific peak occurs around Valentine's Day (February 14th) for The Forever Love Bear. This suggests future product launches could benefit from targeting occasions associated with gift-giving.
+2. Four peak weeks — W8–W9 (around Valentine's Day) and W48–W49 (around Black Friday/Cyber Monday) — together account for 14% of total profit.
+3. Around 50% of users drop off after reaching the shipping page without completing a purchase, rising to 62% for mobile users. One hypothesis worth investigating further is that unexpected shipping costs at this stage contribute to abandonment — this could be tested by reviewing shipping cost visibility on product pages and/or through targeted user research.
+4. Overall engagement is low. Non-purchasers view fewer than 2 pages on average, and most never reach a product page. Even purchasing sessions average only 3 pages viewed, and sessions with 2 different items purchased still show only 1 product page visited — suggesting the second item is often added via cross-sell/recommendation widgets rather than a dedicated product page visit.
+5. Conversion rate rises from 7% to 15–22% among users who visit any product page. This suggests that increasing product page visits could lift conversion. This hypothesis is worth further validation, and if confirmed, should be addressed in website UX.
 
 
