@@ -67,23 +67,24 @@ Columns removed due to being redundant (duplicated with *order_items* table):
 ### 4. POWER BI ANALYSIS
 The dataset contains details about sales and website traffic. The same is reflected in data model having 2 main fact tables: *order_items* and *website_sessions*.
 
-<p align="center">
+<p align="left">
 <img src="img/Data_model.jpg" alt="model" width="800" title="model">
 </p>
 
-Consequently, the dashboard has been divided into 2 parts:
+Following this logic, the dashboard has been divided into 2 parts:
  - Profit analysis
  - Website sessions analysis
 
+It was deliberate decision to analyse the numbers from profit instead of sales perspective after backgroud check showing that both approaches show similar trends, proportions between products and lead to the same conclusions.
 
-PROFIT ANALYSIS - Key metrics
+Additional table with *Calendar* was added in Power BI using DAX formula.
 
-<p align="center">
+<p align="left">
 <img src="img/Profit.jpg" alt="profit" width="800" title="profit">
 </p>
 
 
-<p align="center">
+<p align="left">
 <img src="img/Website_sessions.jpg" alt="sessions" width="800" title="sessions">
 </p>
 
