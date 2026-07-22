@@ -17,7 +17,7 @@ left join order_item_refunds oir using(order_item_id)
   - channel - grouping utm data into 5 categories */
 
 
-create or replace view vw_website_sessions as
+create view vw_website_sessions as
 with
 pageviews_aggregated as 
 	(
@@ -58,7 +58,7 @@ left join pageviews_aggregated pa using(website_session_id)
 
 /* create view to streamline orders table. It will be needed as mainly a bridge table between order_items and website_sessions. */
 
-create or replace view vw_orders as
+create view vw_orders as
 select
 	order_id
 	,website_session_id 
@@ -68,7 +68,7 @@ from orders
 
 /* create view for futher analysis of primary and secondary products */
 
-create or replace view vw_primary_products as
+create view vw_primary_products as
 with primary_orders as 
 	(
 	select 
