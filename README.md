@@ -71,12 +71,13 @@ The dataset contains details about sales and website traffic. The same is reflec
 <img src="img/Data_model.jpg" alt="model" width="800" title="model">
 </p>
 
-The analysis has been divided into 2 parts:
+Consequently, the dashboard has been divided into 2 parts:
  - Profit analysis
  - Website sessions analysis
 
 
 PROFIT ANALYSIS - Key metrics
+
 
 
 
