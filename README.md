@@ -78,6 +78,14 @@ Consequently, the dashboard has been divided into 2 parts:
 
 PROFIT ANALYSIS - Key metrics
 
+<p align="center">
+<img src="img/Profit.jpg" alt="profit" width="800" title="profit">
+</p>
+
+
+<p align="center">
+<img src="img/Website_sessions.jpg" alt="sessions" width="800" title="sessions">
+</p>
 
 
 
