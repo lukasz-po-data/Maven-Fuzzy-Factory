@@ -67,12 +67,13 @@ Dataset consists of 6 tables:
    - `order_items` (view)
    - `orders` (view)
    - `website_sessions` (view)
-   - `order_item_refunds`
    - `products`
    - `website_pageviews`
    - `primary_products`
-   
-2. Two custom columns were added to `website_sessions` to make the final Power BI visualization more user-friendly. These columns translate numeric flag columns (*0, 1*) into text columns (*yes, no*): `purchase_session` (for `purchase_processed`) and `user_type` (for `is_repeat_session`).
+
+2. There was no need to import `order_item_refunds` thanks to the view created for `order_items` and checks done for refunds.
+
+3. Two custom columns were added to `website_sessions` to make the final Power BI visualization more user-friendly. These columns translate numeric flag columns (*0, 1*) into text columns (*yes, no*): `purchase_session` (for `purchase_processed`) and `user_type` (for `is_repeat_session`).
 
 ### 4. POWER BI ANALYSIS
 
