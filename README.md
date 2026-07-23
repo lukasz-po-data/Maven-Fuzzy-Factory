@@ -48,14 +48,18 @@ Dataset consists of 6 tables:
    - a `channel` column grouping `utm_source` and `utm_campaign` data into 5 traffic channels: *paid search – brand, paid search – nonbrand, paid social, direct, and organic search*
      
 3. Created a view for `orders` to streamline the table and remove redundant columns.
-   - **Columns kept:** `order_id`, `website_session_id`, `user_id`
-   - **Columns removed** (redundant with `order_items`): `created_at`, `primary_product_id`, `items_purchased`, `price_usd`, `cogs_usd`
+   - **Columns kept:** `order_id`, `website_session_id`
+   - **Columns removed** (redundant with `order_items` or `website_sessions`): `created_at`, `user_id`, `primary_product_id`, `items_purchased`, `price_usd`, `cogs_usd`
 
-4. Created a view summarizing primary and secondary products for orders with more than one item (`primary_products`).
+4. Created a view for `website_pageviews` to streamline the table and remove redundant columns.
+   - **Columns kept:** `website_session_id`, `pageview_url`
+   - **Columns removed** (redundant with `website_sessions` or not needed): `website_pageview_id`, `created_at`
+
+6. Created a view summarizing primary and secondary products for orders with more than one item (`primary_products`).
 
    [SQL new views](sql/new_views.sql)
 
-5. An additional transformation considered was moving prices and cogs from `order_items` to the `products` table, to optimize the dataset. However, the final decision was to keep these figures in `order_items` as the main fact table, to make the model more realistic. This mirrors how such data would be structured in a real-world data model, where future price and cogs changes are expected — unlike in this dataset, where both remained unchanged throughout the period.
+7. An additional transformation considered was moving prices and cogs from `order_items` to the `products` table, to optimize the dataset. However, the final decision was to keep these figures in `order_items` as the main fact table, to make the model more realistic. This mirrors how such data would be structured in a real-world data model, where future price and cogs changes are expected — unlike in this dataset, where both remained unchanged throughout the period.
 
 ### 3. DATA TRANSFORMATION IN POWER QUERY
 
