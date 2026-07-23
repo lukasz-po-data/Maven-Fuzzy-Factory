@@ -62,10 +62,18 @@ create view vw_orders as
 select
 	order_id
 	,website_session_id 
-	,user_id
 from orders
 
+	
+/*create view to streamline website_pageviews table*/
 
+create view vw_website_pageviews as
+select
+	website_session_id 
+	,pageview_url
+from website_pageviews
+
+	
 /* create view for futher analysis of primary and secondary products */
 
 create view vw_primary_products as
