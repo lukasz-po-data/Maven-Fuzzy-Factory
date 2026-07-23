@@ -56,7 +56,7 @@ left join pageviews_aggregated pa using(website_session_id)
 
 
 
-/* create view to streamline orders table. It will be needed as mainly a bridge table between order_items and website_sessions. */
+/* create view to streamline orders table by removing redundant columns */
 
 create view vw_orders as
 select
@@ -65,7 +65,7 @@ select
 from orders
 
 	
-/*create view to streamline website_pageviews table*/
+/*create view to streamline website_pageviews table by removing redundant columns*/
 
 create view vw_website_pageviews as
 select
