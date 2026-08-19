@@ -89,15 +89,15 @@ Following this logic, the dashboard is divided into 2 parts:
 
 It was a deliberate decision to analyze the numbers from a profit rather than sales perspective, after a background check showed that both approaches reveal similar trends and proportions between products, leading to the same conclusions.
 
-An additional Calendar table was added in Power BI using a DAX formula.
+Additional calendar tables were added in Power BI using DAX formulas. There are separate calendar tables for `order_items` and for `website_sessions` to avoid loops in relationships.
 
 <p align="left">
-<img src="img/Profit.jpg" alt="profit" width="600" title="profit">
+<img src="img/Profit2.jpg" alt="profit" width="600" title="profit">
 </p>
 
 
 <p align="left">
-<img src="img/Website_sessions.jpg" alt="sessions" width="600" title="sessions">
+<img src="img/Website_sessions2.jpg" alt="sessions" width="600" title="sessions">
 </p>
 
 ### 5. KEY TAKEWAYS
