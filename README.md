@@ -6,7 +6,7 @@ Analysis of profit and website sessions data for a fictitious e-commerce busines
 
 **Technologies used:** SQL, Power Query, Power BI
 
-**Final report:** [Maven Fuzzy Factory Report](https://app.powerbi.com/view?r=eyJrIjoiZmNjODA0NjgtOGVkMi00NjkzLTg1YmYtZGVlNDU5MGNkMmQ2IiwidCI6ImE0ZmE1ZWNhLTdhM2YtNDRhYS04ZTI4LTc2MjBhMzk0NjEwZiJ9)
+**Final report:** [Maven Fuzzy Factory Report](https://app.powerbi.com/view?r=eyJrIjoiNGIyNmFhMmItMjQ5Yy00YWE1LWIwMzMtYWIzZTdkZWU1NGMyIiwidCI6ImE0ZmE1ZWNhLTdhM2YtNDRhYS04ZTI4LTc2MjBhMzk0NjEwZiJ9)
 
 ## I. OBJECTIVES
 
@@ -104,7 +104,7 @@ Additional calendar tables were added in Power BI using DAX formulas. There are 
 </p>
 
 
-**Interactive report:** [Maven Fuzzy Factory Report](https://app.powerbi.com/view?r=eyJrIjoiZmNjODA0NjgtOGVkMi00NjkzLTg1YmYtZGVlNDU5MGNkMmQ2IiwidCI6ImE0ZmE1ZWNhLTdhM2YtNDRhYS04ZTI4LTc2MjBhMzk0NjEwZiJ9)
+**Interactive report:** [Maven Fuzzy Factory Report](https://app.powerbi.com/view?r=eyJrIjoiNGIyNmFhMmItMjQ5Yy00YWE1LWIwMzMtYWIzZTdkZWU1NGMyIiwidCI6ImE0ZmE1ZWNhLTdhM2YtNDRhYS04ZTI4LTc2MjBhMzk0NjEwZiJ9)
 
 ### 5. KEY TAKEWAYS
 1. Recurring sales peaks are observed each year. Sales across all products spike at the end of November, likely tied to Black Friday/Cyber Monday. A separate, product-specific peak occurs around Valentine's Day (February 14th) for The Forever Love Bear. This suggests future product launches could benefit from targeting occasions associated with gift-giving.
