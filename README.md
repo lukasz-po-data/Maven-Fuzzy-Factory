@@ -17,7 +17,7 @@ Analysis of profit and website sessions data for a fictitious e-commerce busines
 
 ### 1. DATASET
 
-Dataset consists of 6 tables:
+The dataset consists of 6 tables:
 - `orders`
 - `order_items`
 - `order_item_refunds`
@@ -39,7 +39,7 @@ Dataset consists of 6 tables:
 
 **Data preparation done in SQL:**
 
-1. Created view for *order_items*, so it inlucdes:
+1. Created a view for *order_items*, so it includes:
    - *profit_usd* column (price_usd - cogs_usd)
    - a flag column indicating whether the order item was refunded (`refunded_item`)
      
@@ -106,7 +106,7 @@ Additional calendar tables were added in Power BI using DAX formulas. There are 
 
 **Interactive report:** [Maven Fuzzy Factory Report](https://app.powerbi.com/view?r=eyJrIjoiNGIyNmFhMmItMjQ5Yy00YWE1LWIwMzMtYWIzZTdkZWU1NGMyIiwidCI6ImE0ZmE1ZWNhLTdhM2YtNDRhYS04ZTI4LTc2MjBhMzk0NjEwZiJ9)
 
-### 5. KEY TAKEWAYS
+### 5. KEY TAKEAWAYS
 1. Recurring sales peaks are observed each year. Sales across all products spike at the end of November, likely tied to Black Friday/Cyber Monday. A separate, product-specific peak occurs around Valentine's Day (February 14th) for The Forever Love Bear. This suggests future product launches could benefit from targeting occasions associated with gift-giving.
 2. Four peak weeks — W8–W9 (around Valentine's Day) and W48–W49 (around Black Friday/Cyber Monday) — together account for 14% of total profit.
 3. Around 50% of users drop off after reaching the shipping page without completing a purchase, rising to 62% for mobile users. One hypothesis worth investigating further is that unexpected shipping costs at this stage contribute to abandonment — this could be tested by reviewing shipping cost visibility on product pages and/or through targeted user research.
